@@ -1,0 +1,36 @@
+/* NAVBAR SECTION STYLING */
+#navbar {
+    flex-direction: column;
+}
+ #navbar ul li a {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+ }
+
+ @media screen and (max-width: 340px) {
+    #navbar ul {
+        flex-wrap: wrap;
+    }
+ }
+
+#navbar ul {
+    padding-left: 0;
+}
+
+/* sec-home STYLING */
+#h-primary {
+    padding-top: 8rem;
+}
+
+#sec-home {
+    padding: 1rem 5rem;
+}
+
+#contact-sec > form {
+    width: 65%;
+}
+
+/* container-1 STYLING */
+#container-1 {
+    padding: 1rem 2rem;
+}
