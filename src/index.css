@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Satisfy', cursive;
+}
+
+/* UTILITY CLASSES */
+#h-primary {
+  font-size: 3rem;
+  text-align: center;
+  padding-top: 5rem;
+}
+
+.para-primary {
+  font-size: 1.35rem;
+}
+
+.h-secondary {
+  padding-top: 3rem;
+  font-size: 2.25rem;
+  text-align: center;
+}
+
+/* HEADER STYLING STARTS*/
+
+#header {
+  position: relative;
+  text-align: center;
+  color: aliceblue;
+  padding-bottom: 2rem;
+}
+
+#header::before {
+  content: "";
+  background: url("https://images.pexels.com/photos/8185247/pexels-photo-8185247.jpeg") no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.9;
+  box-sizing: border-box;
+}
+
+/* NAVBAR STYLING STARTS */
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+/* GIVING NAVBAR A BACKGROUND COLOR */
+#navbar::before {
+  content: "";
+  background-color: rgb(250, 98, 143);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.2;
+}
+
+/* LOGO STYLING */
+
+#logo {
+  margin: 0rem 1rem;
+  align-self: center;
+}
+
+#logo img {
+  width: 4rem;
+  height: auto;
+}
+
+/* NAVBAR LIST ELEMENTS STYLING */
+#navbar ul {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0;
+}
+
+#navbar ul li {
+  list-style-type: none;
+}
+
+#navbar ul li a {
+  display: block;
+  padding: 0.5rem 2rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 1rem;
+  color: aliceblue;
+  font-weight: 700
+}
+
+#navbar ul li a:hover {
+  color: cornflowerblue;
+  background-color: aliceblue;
+}
+
+/* NAVBAR STYLING ENDS */
+
+/* sec-home STYLING STARTS */
+#sec-home {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 16rem;
+  align-items: center;
+  justify-content: center;
+}
+
+#sec-home>button {
+  padding: 0.5rem 3rem;
+  border: 2px solid aliceblue;
+  font-weight: 700;
+  border-radius: 1rem;
+  font-family: inherit;
+  font-size: large;
+  background-color: inherit;
+  color: inherit;
+}
+
+#sec-home>button:hover {
+  background-color: aliceblue;
+  color: cornflowerblue;
+}
+
+/* sec-home STYLING ENDS */
+
+
+/* sec-1 STYLING STARTS */
+#sec-1 {
+  position: relative;
+}
+
+#sec-1::before {
+  content: "";
+  background: url("https://images.pexels.com/photos/1798642/pexels-photo-1798642.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat center center/cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.9;
+}
+
+.sec-1-h {
+  padding: 2.5rem 0 1rem 0;
+  font-size: 2.5rem;
+  text-align: center;
+  color: aliceblue;
+}
+
+#container-1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(575px, 1fr));
+  justify-content: center;
+  color: aliceblue;
+  padding: 1rem 2rem;
+}
+
+#container-1>figure {
+  text-align: center;
+}
+
+.items-1 {
+  box-sizing: border-box;
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+  border: 2px solid rgb(69, 68, 70);
+}
+
+
+/* sec-1 STYLING ENDS */
+
+/* sec-2 STYLING STARTS */
+#sec-2 {
+  background-color: aliceblue;
+  color: gray;
+}
+
+.container-2 {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4rem 4rem 4rem;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.partners {
+  width: 100px;
+  height: 100px;
+}
+
+/* sec-2 STYLING ENDS */
+
+/* FOOTER SECTION STYLING STARTS */
+#contact-sec::before {
+  content: "";
+  background: url("https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat center center/cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+#contact-sec {
+  position: relative;
+  text-align: center;
+  color: aliceblue;
+  padding-bottom: 1rem;
+  color: aliceblue;
+}
+
+#contact-sec>form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 45%;
+  align-items: flex-start;
+  margin: auto;
+  font-size: 1.5rem;
+}
+
+.form-group {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 2rem 1rem;
+}
+
+.form-group>input,
+.form-group>textarea {
+  font-size: inherit;
+  border: 2px solid gray;
+  border-radius: 10px;
+  padding: 5px 5px 5px 0;
+  text-indent: 5px;
+  /* Used so that the first letter doesn't get cut inside the input box */
+  font-family: inherit;
+  color: #00695C;
+}
+
+.form-group>input,
+.form-group>textarea {
+  width: 95%;
+}
+
+.centerBtn {
+  width: 100%;
+  margin: auto;
+}
+
+.centerBtn>button {
+  padding: 0.5rem 3rem;
+  border: 2px solid aliceblue;
+  font-weight: 700;
+  border-radius: 1rem;
+  font-family: inherit;
+  font-size: large;
+  background-color: inherit;
+  color: inherit;
+}
+
+.centerBtn>button:hover {
+  background-color: aliceblue;
+  color: cornflowerblue;
+}
+
+/* credits STYLING STARTS*/
+
+#credits>p:nth-child(1) {
+  font-size: 1.3rem;
+  padding: 2rem 2rem;
+  /* position: absolute; */
+  background-color: #00000054;
+}
+
+#credits>p>a {
+  text-decoration: none;
+  color: rgb(126, 188, 246);
+}
+
+/* RESPONSIVE STYLING */
+@media screen and (max-width: 700px) {
+
+  /* NAVBAR SECTION STYLING */
+  #navbar {
+    flex-direction: column;
+  }
+
+  #navbar ul li a {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+
+  @media screen and (max-width: 340px) {
+    #navbar ul {
+      flex-wrap: wrap;
+    }
+  }
+
+  #navbar ul {
+    padding-left: 0;
+  }
+
+  /* sec-home STYLING */
+  #h-primary {
+    padding-top: 8rem;
+  }
+
+  #sec-home {
+    padding: 1rem 5rem;
+  }
+
+  #contact-sec>form {
+    width: 65%;
+  }
+
+  /* container-1 STYLING */
+  #container-1 {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 1rem 1rem;
+  }
+}
